@@ -1,0 +1,33 @@
+CREATE TABLE Sprzedajacy (
+	ID integer AUTO_INCREMENT,
+	PESEL integer(11) UNIQUE,
+	Imie varchar(48),
+	Nazwisko varchar(48),
+	Numer integer(12) UNIQUE,
+	EMail varchar(64) UNIQUE
+);
+
+CREATE TABLE Samochod (
+	ID integer AUTO_INCREMENT,
+	Rejestracja varchar(8) UNIQUE,
+	VIN varchar(17) UNIQUE,
+	Nr_Karty_Pojazdu integer UNIQUE,
+	Marka varchar(24),
+	Model varchar(32),
+	Rodzaj_Pojazdu varchar(16),
+	Rok_Produkcji date,
+	Napęd varchar(8),
+	Masa varchar(16),
+	Tuning boolean,
+	Cena float
+);
+
+
+CREATE TABLE Wlasciciel (
+	ID integer AUTO_INCREMENT,
+	PESEL integer(11) UNIQUE,
+	Imie varchar(48),
+	Nazwisko varchar(48),
+	EMail varchar(48) UNIQUE,
+	Telefon integer(9)
+);
