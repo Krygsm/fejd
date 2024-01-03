@@ -27,30 +27,6 @@ INSERT INTO samochod (Rejestracja, VIN, Nr_Karty_Pojazdu, Marka, Model, Rodzaj_P
 
 
 
-'Toyota', 'Camry', 'Sedan', 2018, 'Na przód', 1500, 'Nie', 20000
-'Ford', 'Focus', 'Hatchback', 2019, 'Na przód', 1300, 'Tak', 18500
-'Honda', 'Civic', 'Coupe', 2017, 'Na przód', 1400, 'Nie', 22000
-'BMW', '3 Series', 'Sedan', 2020, 'Na 4 Koła', 1600, 'Tak', 35000
-'Jeep', 'Wrangler', 'SUV', 2021, 'Na 4 Koła', 1800, 'Nie', 30000
-'Chevrolet', 'Silverado', 'Pickup', 2015, 'Na tył', 2000, 'Tak', 25500
-'Nissan', 'Altima', 'Sedan', 2016, 'Na przód', 1450, 'Nie', 17800
-'Mercedes-Benz', 'E-Class', 'Coupe', 2019, 'Na przód', 1550, 'Tak', 42000
-'Subaru', 'Outback', 'Wagon', 2018, 'Na 4 Koła', 1700, 'Nie', 28500
-'Audi', 'Q5', 'SUV', 2022, 'Na 4 Koła', 1750, 'Tak', 48000
-'Hyundai', 'Tucson', 'SUV', 2019, 'Na przód', 1600, 'Nie', 21500
-'Dodge', 'Charger', 'Sedan', 2017, 'Na tył', 1550, 'Tak', 29500
-'Ford', 'Explorer', 'SUV', 2020, 'Na 4 Koła', 1850, 'Nie', 33000
-'Toyota', 'Prius', 'Hatchback', 2016, 'Na przód', 1200, 'Nie', 15000
-'GMC', 'Sierra', 'Pickup', 2018, 'Na tył', 2100, 'Tak', 31000
-'Volvo', 'XC90', 'SUV', 2021, 'Na 4 Koła', 1900, 'Nie', 40500
-'Chevrolet', 'Malibu', 'Sedan', 2017, 'Na przód', 1500, 'Tak', 23800
-'Lexus', 'RX', 'SUV', 2019, 'Na 4 Koła', 1650, 'Nie', 38000
-'Jaguar', 'F-Pace', 'SUV', 2022, 'Na 4 Koła', 1750, 'Tak', 55000
-'Chrysler', '300', 'Sedan', 2016, 'Na tył', 1600, 'Nie', 26500
-'Subaru', 'Impreza', 'Hatchback', 2018, 'Na 4 Koła', 1400, 'Tak', 27000
-'Volkswagen', 'Tiguan', 'SUV', 2020, 'Na przód', 1650, 'Nie', 24500
-'Porsche', '911', 'Coupe', 2021, 'Na tył', 1450, 'Tak', 95000
-'Nissan', 'Rogue', 'SUV', 2017, 'Na przód', 1550, 'Nie', 19900
-'Audi', 'A4', 'Sedan', 2019, 'Na przód', 1520, 'Tak', 36800
+
 
 
