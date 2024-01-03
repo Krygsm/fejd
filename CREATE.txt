@@ -1,5 +1,5 @@
 CREATE TABLE Sprzedajacy (
-	ID integer AUTO_INCREMENT PRIMARY KEY,
+	ID INT AUTO_INCREMENT PRIMARY KEY,
 	PESEL integer(11) UNIQUE,
 	Imie varchar(48),
 	Nazwisko varchar(48),
