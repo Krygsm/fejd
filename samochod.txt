@@ -3,7 +3,7 @@ INSERT INTO samochod (Rejestracja, VIN, Nr_Karty_Pojazdu, Marka, Model, Rodzaj_P
 ('EL456EF', '5YJSA1CN8DFP01642', 'KLM789PQR1', 'Honda', 'Accord', 'Sedan', 2019, 'Na tył', 1465, false, 22000),
 ('ELW789GH', 'JHMCG5641YC123456', '456DEFJKL0', 'Ford', 'Focus', 'Hatchback', 2021, 'Na 4 koła', 1331, true, 20000),
 ('EL1SEBA', 'KLATF08Y1VB363636', 'UVW321GHI5', 'Chevrolet', 'Cruze', 'Sedan', 2018, 'Na przód', 1632, false, 18000),
-('ELF78JG', '3VWCM21Y31M800001', 'MNO678RST9', 'Nissan', 'Sunny', 'Hatchback', 1986, 'Na przód', 1654, true, 18000),
+('ELF78JG', '3VWCM21Y31M800001', 'MNO678RST9', 'Nissan', 'Sunny', 'Hatchback', 1990, 'Na przód', 1134, true, 18000),
 ('EL5KSJ2', 'WAUDH74F55N901234', 'PQRS987LMN', 'Toyota', 'Camry', 'Sedan', 2018, 'Na przód', 1500, false, 20000),
 ('ELJDUE9', '1FAFP45X62F198765', '123XYZABC6', 'Ford', 'Focus', 'Hatchback', 2019, 'Na przód', 1300, true, 18500),
 ('EL5JDAW', 'YV1SZ58D411234567', 'HIJ456VWX7', 'Honda', 'Civic', 'Coupe', 2017, 'Na przód', 1400, false, 22000),
