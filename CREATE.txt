@@ -14,7 +14,7 @@ CREATE TABLE Samochod (
 	Marka varchar(24),
 	Model varchar(32),
 	Rodzaj_Pojazdu varchar(16),
-	Rok_Produkcji date,
+	Rok_Produkcji varchar(4),
 	Napęd varchar(8),
 	Masa varchar(16),
 	Tuning boolean,
