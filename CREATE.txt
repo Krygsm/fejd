@@ -8,7 +8,7 @@ CREATE TABLE Sprzedajacy (
 );
 CREATE TABLE Samochod (
 	ID integer AUTO_INCREMENT PRIMARY KEY,
-	Rejestracja varchar(7) UNIQUE,
+	Rejestracja varchar(8) UNIQUE,
 	VIN varchar(17) UNIQUE,
 	Nr_Karty_Pojazdu varchar(10) UNIQUE,
 	Marka varchar(24),
