@@ -1,10 +1,10 @@
 CREATE TABLE Sprzedajacy (
-	ID INT AUTO_INCREMENT PRIMARY KEY,
-	PESEL integer(11) UNIQUE,
-	Imie varchar(48),
-	Nazwisko varchar(48),
-	Numer INT UNIQUE,
-	EMail varchar(64) UNIQUE
+    	ID INT AUTO_INCREMENT PRIMARY KEY,
+    	PESEL VARCHAR(11) UNIQUE,
+    	Imie VARCHAR(48),
+    	Nazwisko VARCHAR(48),
+    	Numer INT UNIQUE,
+    	EMail VARCHAR(64) UNIQUE
 );
 CREATE TABLE Samochod (
 	ID integer AUTO_INCREMENT PRIMARY KEY,
