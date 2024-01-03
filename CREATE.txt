@@ -21,12 +21,12 @@ CREATE TABLE Samochod (
 	Cena float
 );
 CREATE TABLE Wlasciciel (
-	ID integer AUTO_INCREMENT PRIMARY KEY,
-	PESEL integer(11) UNIQUE,
-	Imie varchar(48),
-	Nazwisko varchar(48),
-	EMail varchar(48) UNIQUE,
-	Telefon integer(9)
+    	ID INT AUTO_INCREMENT PRIMARY KEY,
+   	PESEL BIGINT UNIQUE,
+   	Imie VARCHAR(48),
+   	Nazwisko VARCHAR(48),
+    	EMail VARCHAR(48) UNIQUE,
+    	Telefon INT
 );
 CREATE TABLE Klient (
 	ID integer AUTO_INCREMENT PRIMARY KEY,
