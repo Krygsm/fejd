@@ -3,7 +3,7 @@ CREATE TABLE Sprzedajacy (
 	PESEL integer(11) UNIQUE,
 	Imie varchar(48),
 	Nazwisko varchar(48),
-	Numer integer(12) UNIQUE,
+	Numer INT UNIQUE,
 	EMail varchar(64) UNIQUE
 );
 CREATE TABLE Samochod (
