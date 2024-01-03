@@ -1,1 +1,1 @@
-elo elo 320
+Link do [schematu] bazy(https://dbdesigner.page.link/VKreiYEKXKmPmJic7)

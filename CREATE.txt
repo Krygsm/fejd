@@ -1,14 +1,13 @@
 CREATE TABLE Sprzedajacy (
-	ID integer AUTO_INCREMENT,
+	ID integer AUTO_INCREMENT PRIMARY KEY,
 	PESEL integer(11) UNIQUE,
 	Imie varchar(48),
 	Nazwisko varchar(48),
 	Numer integer(12) UNIQUE,
 	EMail varchar(64) UNIQUE
 );
-
 CREATE TABLE Samochod (
-	ID integer AUTO_INCREMENT,
+	ID integer AUTO_INCREMENT PRIMARY KEY,
 	Rejestracja varchar(8) UNIQUE,
 	VIN varchar(17) UNIQUE,
 	Nr_Karty_Pojazdu integer UNIQUE,
@@ -21,13 +20,27 @@ CREATE TABLE Samochod (
 	Tuning boolean,
 	Cena float
 );
-
-
 CREATE TABLE Wlasciciel (
-	ID integer AUTO_INCREMENT,
+	ID integer AUTO_INCREMENT PRIMARY KEY,
 	PESEL integer(11) UNIQUE,
 	Imie varchar(48),
 	Nazwisko varchar(48),
 	EMail varchar(48) UNIQUE,
 	Telefon integer(9)
+);
+CREATE TABLE Klient (
+	ID integer AUTO_INCREMENT PRIMARY KEY,
+	Imie varchar(32),
+	Nazwisko varchar(32),
+	PESEL varchar(11) UNIQUE,
+	Data date,
+	Numer integer(16) UNIQUE,
+	Region varchar(32),
+	Adres varchar(128)
+);
+CREATE TABLE Umowa (
+    ID integer AUTO_INCREMENT PRIMARY KEY,
+    Data date,
+    KupujacyEPodpis blob NULL,
+    SprzedajacyEPodpis blob NULL
 );
