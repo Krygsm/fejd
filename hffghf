@@ -1,0 +1,58 @@
+CREATE TABLE Sprzedajacy (
+	ID integer AUTO_INCREMENT PRIMARY KEY,
+	PESEL integer(11) UNIQUE,
+	Imie varchar(48),
+	Nazwisko varchar(48),
+	Numer integer(12) UNIQUE,
+	EMail varchar(64) UNIQUE
+);
+CREATE TABLE Samochod (
+	ID integer AUTO_INCREMENT PRIMARY KEY,
+	Rejestracja varchar(8) UNIQUE,
+	VIN varchar(17) UNIQUE,
+	Nr_Karty_Pojazdu varchar(10) UNIQUE,
+	Marka varchar(24),
+	Model varchar(32),
+	Rodzaj_Pojazdu varchar(16),
+	Rok_Produkcji date,
+	Napęd varchar(8),
+	Masa varchar(16),
+	Tuning boolean,
+	Cena float
+);
+CREATE TABLE Wlasciciel (
+	ID integer AUTO_INCREMENT PRIMARY KEY,
+	PESEL integer(11) UNIQUE,
+	Imie varchar(48),
+	Nazwisko varchar(48),
+	EMail varchar(48) UNIQUE,
+	Telefon integer(9),
+    SamochodID integer,
+    FOREIGN KEY (SamochodID) REFERENCES Samochod(ID)
+);
+CREATE TABLE Klient (
+	ID integer AUTO_INCREMENT PRIMARY KEY,
+	Imie varchar(32),
+	Nazwisko varchar(32),
+	PESEL varchar(11) UNIQUE,
+	Data date,
+	Numer integer(16) UNIQUE,
+	Region varchar(32),
+	Adres varchar(128),
+    SamochodID integer,
+    FOREIGN KEY (SamochodID) REFERENCES Samochod(ID)
+);
+CREATE TABLE Umowa (
+    ID integer AUTO_INCREMENT PRIMARY KEY,
+    Data date,
+    KupujacyEPodpis blob NULL,
+    SprzedajacyEPodpis blob NULL,
+    SamochodID int,
+    KlientID int,
+    SprzedajacyID int,
+    WlascicielID int,
+    FOREIGN KEY (SamochodID) REFERENCES Samochod(ID),
+    FOREIGN KEY (KlientID) REFERENCES Klient(ID),
+    FOREIGN KEY (SprzedajacyID) REFERENCES Sprzedajacy(ID),
+    FOREIGN KEY (WlascicielID) REFERENCES Wlasciciel(ID)
+);
