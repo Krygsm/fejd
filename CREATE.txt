@@ -21,12 +21,14 @@ CREATE TABLE Samochod (
 	Cena float
 );
 CREATE TABLE Wlasciciel (
-    	ID INT AUTO_INCREMENT PRIMARY KEY,
+	ID INT AUTO_INCREMENT PRIMARY KEY,
    	PESEL BIGINT UNIQUE,
    	Imie VARCHAR(48),
    	Nazwisko VARCHAR(48),
     	EMail VARCHAR(48) UNIQUE,
-    	Telefon INT
+    	Telefon INT,
+    SamochodID integer,
+    FOREIGN KEY (SamochodID) REFERENCES Samochod(ID)
 );
 CREATE TABLE Klient (
 	ID integer AUTO_INCREMENT PRIMARY KEY,
@@ -36,11 +38,21 @@ CREATE TABLE Klient (
 	Data date,
 	Numer integer(16) UNIQUE,
 	Region varchar(32),
-	Adres varchar(128)
+	Adres varchar(128),
+    SamochodID integer,
+    FOREIGN KEY (SamochodID) REFERENCES Samochod(ID)
 );
 CREATE TABLE Umowa (
     ID integer AUTO_INCREMENT PRIMARY KEY,
     Data date,
     KupujacyEPodpis blob NULL,
-    SprzedajacyEPodpis blob NULL
+    SprzedajacyEPodpis blob NULL,
+    SamochodID int,
+    KlientID int,
+    SprzedajacyID int,
+    WlascicielID int,
+    FOREIGN KEY (SamochodID) REFERENCES Samochod(ID),
+    FOREIGN KEY (KlientID) REFERENCES Klient(ID),
+    FOREIGN KEY (SprzedajacyID) REFERENCES Sprzedajacy(ID),
+    FOREIGN KEY (WlascicielID) REFERENCES Wlasciciel(ID)
 );
